@@ -755,8 +755,7 @@ function endTesting() {
     $("#mainbutton").click(function () {
         psiTurk.saveData({
             success: function(){
-            psiTurk.completeHIT(); // when finished saving compute bonus, the quit
-
+                psiTurk.completeHIT(); 
             }, 
             error: prompt_resubmit});
     });
