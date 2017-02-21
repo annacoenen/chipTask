@@ -1,0 +1,50 @@
+
+<!--WRAPPER-->
+<div id="wrapper">
+    <!--LOGIN FORM-->
+    <div name="login-form" class="login-form" action="" method="post">
+        <!--HEADER-->
+        <div class="header">
+        <!--TITLE--><h1>End of training</h1><!--END TITLE-->
+        <!--DESCRIPTION--><span>All subsequent chip tests can be selected for payment</span><!-- END DESCRIPTION-->
+        </div>
+        <!--END HEADER-->
+        
+        <!--CONTENT-->
+        <div class="content">
+
+            <div class="col1" style = "width: 710px;"></div>
+        </div>
+        <!--END CONTENT-->
+                <!--FOOTER-->
+        <div class="footer">
+        <!--LOGIN BUTTON--><input id = "mainbutton" type="button" name="continue" value="Next" class="button" /><!--END LOGIN BUTTON-->
+        </div>
+        <!--END FOOTER-->
+    </div> <!--END LOGIN FORM-->
+</div>
+<!-- END WRAPPER -->
+<script type="text/javascript">
+	$(document).ready(function(){
+        payment = payoffs[0] + fixedPayment;
+
+		var text = "<p>\
+                        Your training chip tests are over!\
+                    </p>\
+                    <p>\
+                        In chip test 1 and chip test 2 your bonus payments were <b>$"+ payoffs[0]+ " and $"+payoffs[1] + "</b> respectively.\
+                    </p>\
+                    <p>\
+                        To illustrate how the bonus payment works, assume these were actual non-training tests.\
+                        One of them would be randomly selected to determine your bonus, for example <b>chip test 1</b>.\
+                    </p>\
+                    <p>\
+						In chip test 1 you earned <b>$"+ payoffs[0]+ "</b>. Your total payment would be <b>$"+payment+"</b> ($2 plus bonus).\
+                    </p>\
+                    <p>\
+                    <br><br>\
+                        <i>Click \"Next\" to proceed to the remaining chip tests that can be chosen for your final payment.</i>\
+					</p>"
+		$('.col1').html(text);
+	})
+</script>

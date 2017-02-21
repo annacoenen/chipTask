@@ -1,0 +1,403 @@
+/*******************
+FONTS
+*******************/
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+
+body { 
+    background: url(../images/bg.png) repeat;
+    font-family: "Helvetica Neue", Helvetica;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: .08em;
+    font-weight: normal;
+    color: black;
+    opacity: 0.98;
+    height: 100%;
+}
+a:link,
+a:visited,
+a:hover,
+a:active { 
+    color: #90a8be; 
+    text-decoration: none; 
+    border-bottom: 1px dotted #90a8be; 
+}    
+article {
+    display: block;
+}
+
+
+
+p {
+    text-align: center;
+    font-size: 100%;
+    margin: 0 auto;
+/*      width: 800px;*/
+    }
+
+
+.strong {
+    font-weight: bold;
+    color: #DDAA90;
+/*      width: 800px;*/
+    }
+
+
+/*******************
+content box view borrowed from:;
+LOGIN FORM STYLESHEET
+by: Amit Jakhu
+www.amitjakhu.com
+*******************/
+#wrapper {
+    /* Center wrapper perfectly */
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -400px;
+}
+
+
+
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login-form {
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    z-index:5;
+    
+    background: #f3f3f3;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+    padding: 20px 30px 30px 30px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.login-form .header h1 {
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height:34px;
+    color: #414848;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+    margin-bottom: 10px;
+}
+
+.login-form .header span {
+    font-size: 16px;
+    line-height: 16px;
+    color: #678889;
+    text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+    padding: 0 30px 25px 30px;
+    height: 459px;
+}
+
+.login-form .content .col1  {
+    float: left;
+    width: 250px;
+    min-height: 400px;
+    padding: 10px 10px 0px 10px;   
+}
+
+.login-form .content .col1  p {
+    text-align: left;
+    margin-bottom: 1em;
+    font-size: 15px;
+}
+
+.login-form .content .col2 {
+    float: right;
+    width: 440px;
+    min-height: 400px;
+    padding: 10px 10px 0px 10px;
+    border-left: 1px dotted darkgray;
+}
+
+.login-form .content .col2 p {
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 14px;
+}
+
+
+
+/*******************
+FOOTER
+*******************/
+
+.login-form .footer {
+    padding: 10px 30px 10px 30px;
+    overflow: auto;
+    height: 52px;
+    background: #d4dedf;
+    border-top: 1px solid #fff;
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Login button */
+.login-form .footer .button {
+    float:right;
+    padding: 11px 25px;
+    
+    font-family: 'Bree Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+    
+    background: #56c2e1;
+    border: 1px solid #46b3d3;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+    -webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+
+#secondbutton {
+    float:left;
+    margin-left: 300px;
+}
+
+
+.cellcontainer {
+/*    display:table-cell;
+    position:relative;*/
+    text-align: center;
+    vertical-align:middle;
+}
+
+.tablecontainer {
+    display:table;
+    height: 300px;
+}
+
+#instruct {
+display:table-row;
+text-align: left;
+font-size: 90%;
+}
+
+
+
+#hypotheses {
+/*display:inline-block;*/
+/*display:table-row*/
+text-align: center;
+}
+
+.hypwrap {
+display: inline-block;
+}
+
+.hypheader {
+    font-size:75%;
+    display: block;
+} 
+
+#canvas {
+    text-align: center;
+}
+
+
+
+#slider {
+  width: 50%;
+  float:left;
+  text-align:center;
+  margin-left: 25%; /*Make sure this is 50-width/2!!*/ 
+}
+
+
+#sliderlabelleft {
+    margin-left:10%;
+    font-size: 70%;
+    float:left;
+}
+
+#slidercontainer {
+    position: relative;
+    width: 100%;
+}
+
+#sliderlabelright {
+    margin-left:25%;
+    font-size: 70%;
+    float:left;
+}
+
+#slidertext {
+    margin-top:20px;
+    text-align:center;
+}
+
+.slider {
+    display: none;
+}
+
+#instructions {
+    display:block;
+    margin-bottom: 10px;
+    /*font-family: "Arbutus Slab", "Arial";*/
+    font-size:80%;
+}
+
+
+div#preq h1 {
+    margin-bottom:0px;
+    padding:0px;
+    color:#3399FF;
+}
+div#preq h2 {
+    margin-top:0px;
+    padding:0px;
+}
+div#preq p {
+    text-align:left;
+    font-family:Arial;
+    font-size:80%;
+    margin-bottom:1%;
+    margin-top:1%;
+}
+
+div#preq input {
+    float:left;
+    margin-right:20px;
+}
+
+
+.questionnaire {
+    font-size: 70%;
+    text-align: left;
+}
+.questionnaire h1 {
+    text-align: center;
+}
+.questionnaire table {
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0.25em;
+    border: none;
+}
+.questionnaire tr {
+    display: block;
+    border-bottom: 2px dashed white;
+}
+.questionnaire tr:last-child { border: 0; }
+
+.questionnaire td {
+    padding-right: 0.25em;
+    vertical-align: middle;
+    border-width: 0 1px;
+    border: none
+    margin: 20px;
+    padding-bottom: 10px;
+}
+.questionnaire td:first-child, td + td {border-left: 0; }
+.questionnaire td:last-child { padding-right: 0; border-right: 0; }
+
+
+.answer {
+    text-align: left;
+    padding-left: 3em;
+}
+
+
+
+.questionnaire textarea {
+    width: 320px;
+    height: 130px;
+}
+.questionnaire form {
+    text-align: right;
+}
+.questionnaire hr {
+    border-bottom: 1px solid #bbbbff;
+}
+
+.questionnaire ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*#debriefing {
+    width: 640px;
+}
+
+#debriefingtext {
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 80%;
+    text-align: justify;
+    border: 1px solid white;
+}
+#affirmationbox {
+    position: relative;
+    margin:  0 auto;
+    border: 1px dotted white; 
+    padding: 10px 20px;
+    vertical-align: middle;
+}
+#affirmationbox p {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0;
+}
+#affirmationbox  table {
+    border-spacing: 20px;
+}
+#affirmationbox  td {
+    vertical-align: middle;
+    font-size: 100%;
+    color: black;
+    height: 50px;
+    cursor: pointer;
+}
+#affirmative {
+    background: white;
+    overflow: hidden;
+    font-weight: bold;
+    width: 10em;
+}
+#negative {
+    background: white;
+    font-size: 100%;
+    width: 25em;
+}*/

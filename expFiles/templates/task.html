@@ -1,0 +1,57 @@
+<!--WRAPPER-->
+<div id="wrapper">
+
+	<!--LOGIN FORM-->
+	<form name="login-form" class="login-form" action="" method="post">
+
+		<!--HEADER-->
+	    <div class="header">
+	    <!--TITLE--><h1>Chip Test</h1><!--END TITLE-->
+	    <!--DESCRIPTION--><span>Find out which chip diagram is correct.</span><!-- END DESCRIPTION-->
+	    </div>
+	    <!--END HEADER-->
+		
+		<!--CONTENT-->
+	    <div class="content">
+	    	<div class="col1">
+				<p>
+					On the right you can see <b>two types of chips that are produced in this section of the factory</b>.
+				</p>
+				<p>
+				Next, you will be given a chip that was found in this section.
+		    	</p>
+		    	<p>
+		    		Your job is to find out what type of chip it is.
+		    	</p>
+	    	</div>
+	    	<div class="col2">
+
+
+	    	</div>
+	    </div>
+	    <!--END CONTENT-->
+	    
+	    <!--FOOTER-->
+	    <div class="footer">
+	    <!--LOGIN BUTTON--><input id="mainbutton" type="button" name="continue" value="Next" class="button" /><!--END LOGIN BUTTON-->
+	    </div>
+	    <!--END FOOTER-->
+
+	</form>
+	<!--END LOGIN FORM-->
+</div>
+<!-- END WRAPPER -->
+
+<script type="text/javascript">	
+		$(document).ready(function(){
+
+			if (currentblock<3) {
+				var testrun = '<font color = "red"> (Training)</font>';
+			}
+			else {
+				var testrun = '';
+			}
+			$('h1').html('Chip Test '+(currentblock)+testrun);
+		});
+</script>
+

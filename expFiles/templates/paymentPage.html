@@ -1,0 +1,46 @@
+
+<!--WRAPPER-->
+<div id="wrapper">
+    <!--LOGIN FORM-->
+    <div name="login-form" class="login-form" action="" method="post">
+        <!--HEADER-->
+        <div class="header">
+        <!--TITLE--><h1>Payment</h1><!--END TITLE-->
+        <!--DESCRIPTION--><span>Your bonus payment is determined below.</span><!-- END DESCRIPTION-->
+        </div>
+        <!--END HEADER-->
+        
+        <!--CONTENT-->
+        <div class="content">
+
+            <div class="col1" style = "width: 710px;"></div>
+        </div>
+        <!--END CONTENT-->
+                <!--FOOTER-->
+        <div class="footer">
+        <!--LOGIN BUTTON--><input id = "mainbutton" type="button" name="continue" value="Next" class="button" /><!--END LOGIN BUTTON-->
+        </div>
+        <!--END FOOTER-->
+    </div> <!--END LOGIN FORM-->
+</div>
+<!-- END WRAPPER -->
+<script type="text/javascript">
+	$(document).ready(function(){
+        var chiptest = randomSection + fixedPayment; // 2 training rounds must be added
+
+		var text = "<p>\
+                        Thanks for taking part in this experiment! You will be paid $2 plus the outcome of one randomly selected chip test.\
+                    </p>\
+                    <p>\
+						The chip test that was selected for your payment is <b>chip test "+chiptest+"</b>!\
+					</p>\
+                    <p>\
+						In the selected chip test you earned <b>$"+bonus+"</b>. Your total payment for the experiment is <b>$"+payment+"</b>.\
+                    </p>\
+                    <p>\
+                    <br><br>\
+                        <i>Click \"Next\" to proceed to a final short survey.</i>\
+					</p>"
+		$('.col1').html(text);
+	})
+</script>
